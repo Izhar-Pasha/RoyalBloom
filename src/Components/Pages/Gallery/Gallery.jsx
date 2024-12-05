@@ -12,12 +12,11 @@ import img9 from "../../Assets/G4.jpg";
 import img10 from "../../Assets/G5.jpg";
 import img12 from "../../Assets/G7.jpg";
 import img13 from "../../Assets/G8.jpg";
-import V1 from "../../Assets/Videos/Deco_Video.mp4";
-import V2 from "../../Assets/Videos/Deco_Video1.mp4";
-import V3 from "../../Assets/Videos/Deco_Video2.mp4";
-import V4 from "../../Assets/Videos/Deco.mp4";
-import V6 from "../../Assets/Videos/Home.mp4";
-// import V7 from "../../Assets/Videos/Intro.mp4";
+import V1 from "../../../../public/Videos/Deco_Video.mp4";
+import V2 from "../../../../public/Videos/Deco_Video1.mp4";
+import V3 from "../../../../public/Videos/Deco_Video2.mp4";
+import V4 from "../../../../public/Videos/Deco.mp4";
+import V6 from "../../../../public/Videos/Home.mp4";
 
 const Gallery = () => {
   return (
@@ -31,7 +30,6 @@ const Gallery = () => {
         <video src={V3} className="video" autoPlay muted loop></video>
         <video src={V4} className="video" autoPlay muted loop></video>
         <video src={V6} className="video" autoPlay muted loop></video>
-        {/* <video src={V7} className="video" autoPlay muted loop></video> */}
       </div>
       {/* </div> */}
       <h2>PHOTOS'S</h2>

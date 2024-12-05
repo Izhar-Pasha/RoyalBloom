@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.scss";
-import R1 from "../../Assets/Videos/Reviews1.mp4";
-import R2 from "../../Assets/Videos/Reviews2.mp4";
-import R3 from "../../Assets/Videos/Reviews3.mp4";
+import R1 from "../../../../public/Videos/Reviews1.mp4";
+import R2 from "../../../../public/Videos/Reviews2.mp4";
+import R3 from "../../../../public/Videos/Reviews3.mp4";
 import { TbTargetArrow } from "react-icons/tb";
 import { FaLowVision } from "react-icons/fa";
 import { useRef } from "react";
