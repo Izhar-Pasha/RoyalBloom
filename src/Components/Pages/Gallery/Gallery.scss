@@ -1,0 +1,64 @@
+@import "../../css-config/mixins.scss";
+
+#Gallery {
+  height: auto;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+
+  #content {
+    height: 0px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    @include md {
+      padding: 0;
+    }
+
+    .video {
+      height: 360px;
+      width: 400px;
+      object-fit: cover;
+
+      @include md {
+        height: 400px;
+        width: 400px;
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+    letter-spacing: 8px;
+  }
+  #photos {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 20px;
+
+    .column {
+      -ms-flex: 25%;
+      flex: 25%;
+      max-width: 80%;
+      overflow: hidden;
+      padding: 0 10px;
+
+      img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      img:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import "../css-config/mixins.scss";
+
+// #load {
+//   height: 100vh;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   background: #151517;
+//   background: -webkit-linear-gradient(72deg, #151517 0%, #3e0824 100%);
+//   background: linear-gradient(72deg, #151517 0%, #3e0824 100%);
+
+//   .heart #line {
+//     fill: none;
+//     stroke: #e00000;
+//     stroke-width: 1.5;
+//     stroke-linecap: butt;
+//     stroke-linejoin: round;
+//     stroke-miterlimit: 4;
+//     stroke-opacity: 1;
+//     stroke-dasharray: 1;
+//     stroke-dashoffset: 1;
+//     animation: dash 3s linear infinite;
+//   }
+//   .heart #point {
+//     fill: none;
+//     stroke: #f00000;
+//     stroke-width: 5;
+//     stroke-linecap: round;
+//     stroke-linejoin: round;
+//     stroke-miterlimit: 0.1;
+//     stroke-opacity: 1;
+//     stroke-dasharray: 0.0001, 0.9999;
+//     stroke-dashoffset: 1;
+//     animation: dash 3s linear infinite;
+//   }
+//   @keyframes dash {
+//     0% {
+//       stroke-dashoffset: 1;
+//     }
+//     80% {
+//       stroke-dashoffset: 0;
+//     }
+//     100% {
+//       stroke-dashoffset: 0;
+//     }
+//   }
+// }
+
+#loader {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: red;
+  background: #23050b;
+  background: -webkit-linear-gradient(
+    43deg,
+    #310606 50%,
+    #000000 50%,
+    #000000 100%
+  );
+  background: linear-gradient(250deg, #310606 35%, #000000 50%, #000000 100%);
+  // background-image: linear-gradient(#310606, #000000);
+  // background-image: url("../Assets//Royal_Load.gif");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // h1 {
+  //   color: white;
+  // }
+
+  img {
+    height: 300px;
+    width: 300px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 30px 10px 40px 20px #310606;
+
+    @include md {
+      height: 500px;
+      width: 500px;
+      box-shadow: 20px 20px 20px 20px #310606;
+    }
+  }
+}

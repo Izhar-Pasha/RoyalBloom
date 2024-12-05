@@ -1,0 +1,238 @@
+@import "../../css-config/mixins.scss";
+
+#service {
+  height: auto;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+
+  .srvce-intro {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    background-image: url("../../Assets/SrvceBanner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+
+    @include md {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: start;
+      background-image: url("../../Assets/SrvceBanner.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+    }
+
+    h1 {
+      height: auto;
+      width: 50%;
+      letter-spacing: 8px;
+      font-weight: 500;
+      margin: 0px 0px 30px 20px;
+      color: white;
+      font-size: 1.5rem;
+      backdrop-filter: blur(10px);
+
+      @include md {
+        margin: 0px 0px 30px 20px;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @include md {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    #text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h4 {
+        font-size: 1.1rem;
+        margin-top: 60px;
+        @include md {
+        }
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        @include md {
+        }
+      }
+
+      p {
+        width: 90%;
+        @include md {
+          width: 70%;
+        }
+      }
+    }
+
+    #catelogue {
+      height: 180vh;
+      width: 100%;
+      margin: 40px 0px 40px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 80px;
+
+      @include md {
+        height: 400px;
+        width: 89%;
+        margin: 40px 0px 40px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 30px;
+      }
+
+      .cat {
+        height: 130px;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        border-radius: 15px;
+        background-color: rgba(229, 234, 235, 0.5);
+        transition: all 0.3s ease;
+        -webkit-box-shadow: 13px 11.5px 12.5px 0 #dddddd;
+        -moz-box-shadow: 13px 11.5px 12.5px 0 #dddddd;
+        box-shadow: 13px 11.5px 12.5px 0 #dddddd;
+
+        @include md {
+          height: 120px;
+          width: 150px;
+          padding: 12px;
+          margin-right: 100px;
+        }
+
+        img {
+          height: 65px;
+          width: 65px;
+          margin: auto;
+          font-size: 2rem;
+          color: black;
+
+          @include md {
+            height: 55px;
+            width: 55px;
+          }
+        }
+        h3 {
+          font-size: 1.2rem;
+          margin: 0;
+          padding: 0;
+          @include md {
+            font-size: 1rem;
+          }
+        }
+      }
+      .cat:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+        -webkit-box-shadow: 9px 11px 19.5px 1.5px #0c0b0b;
+        -moz-box-shadow: 9px 11px 19.5px 1.5px #0c0b0b;
+        box-shadow: 6px 11px 19.5px 1.2px #0c0b0b;
+      }
+    }
+  }
+
+  #depth {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 20px 0px 20px 0px;
+
+    h1 {
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 0;
+      @include md {
+        font-size: 1.8rem;
+      }
+    }
+
+    .row {
+      height: fit-content;
+      width: 100%;
+      display: block;
+      justify-content: center;
+      align-items: center;
+
+      @include md {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    }
+
+    .detail_service {
+      height: auto;
+
+      ul {
+        list-style: number;
+
+        h3 {
+          width: 80%;
+          margin: 0.5rem;
+          font-weight: 800;
+          font-size: 1.2rem;
+          letter-spacing: 3px;
+        }
+
+        li {
+          margin: 0;
+          font-size: 0.9rem;
+          line-height: 1rem;
+          padding: 5px 0px 0px 10px;
+        }
+      }
+    }
+  }
+}
