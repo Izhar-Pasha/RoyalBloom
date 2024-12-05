@@ -1,23 +1,23 @@
 import React from "react";
 import "./About.scss";
-import R1 from "../../../../public/Videos/Reviews1.mp4";
-import R2 from "../../../../public/Videos/Reviews2.mp4";
-import R3 from "../../../../public/Videos/Reviews3.mp4";
+// import R1 from "../../../../public/Videos/Reviews1.mp4";
+// import R2 from "../../../../public/Videos/Reviews2.mp4";
+// import R3 from "../../../../public/Videos/Reviews3.mp4";
 import { TbTargetArrow } from "react-icons/tb";
 import { FaLowVision } from "react-icons/fa";
-import { useRef } from "react";
+// import { useRef } from "react";
 
 const About = () => {
-  const videoRefs = useRef([]);
+  // const videoRefs = useRef([]);
 
-  const togglePlayPause = (index) => {
-    const video = videoRefs.current[index];
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-  };
+  // const togglePlayPause = (index) => {
+  //   const video = videoRefs.current[index];
+  //   if (video.paused) {
+  //     video.play();
+  //   } else {
+  //     video.pause();
+  //   }
+  // };
 
   return (
     <div className="about">
@@ -72,7 +72,7 @@ const About = () => {
       {/* REVIEWS */}
       <div id="reviews">
         <h1>REVIEWS</h1>
-        <div id="review_video">
+        {/* <div id="review_video">
           {[R1, R2, R3].map((videoSrc, index) => (
             <div key={index} className="video-container">
               <video
@@ -87,10 +87,25 @@ const About = () => {
                 ▶️
               </button>
             </div>
-          ))}
-        </div>
+          ))} */}
+        <video controls>
+          {/*REVIEW 1 */}
+          <source
+            src="https://www.youtube.com/watch?v=VB2PL0ffTFw&list=PLPfFfp1_hOuwfHvJrOXCe1NEyf_myolns&index=8"
+            type="video/mp4"
+          />
+        </video>
+
+        <video controls>
+          {/*REVIEW 2 */}
+          <source
+            src="https://www.youtube.com/watch?v=GcRhbWm2Zlc&list=PLPfFfp1_hOuwfHvJrOXCe1NEyf_myolns&index=9"
+            type="video/mp4"
+          />
+        </video>
       </div>
     </div>
+    // </div>
   );
 };
 
