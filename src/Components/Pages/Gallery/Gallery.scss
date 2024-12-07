@@ -18,10 +18,10 @@
       padding: 0;
     }
 
-    .video {
+    .iframe {
       height: 360px;
-      width: 400px;
-      object-fit: cover;
+      width: 100%;
+      object-fit: contain;
 
       @include md {
         height: 400px;
@@ -53,6 +53,19 @@
         vertical-align: middle;
         width: 100%;
         transition: all 0.3s ease-in-out;
+        animation: img 2s ease-in-out;
+      }
+
+      @keyframes img {
+        0% {
+          transform: scale(0);
+        }
+        80% {
+          transform: scale(1.04);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
 
       img:hover {

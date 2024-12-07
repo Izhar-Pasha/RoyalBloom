@@ -9,6 +9,12 @@ const Navbar = () => {
 
   const toggleDisplay = () => {
     setisDisplay((prevState) => !prevState);
+
+    if (!isDisplay) {
+      document.body.classList.add("sidebar-open");
+    } else {
+      document.body.classList.remove("sidebar-open");
+    }
   };
 
   return (

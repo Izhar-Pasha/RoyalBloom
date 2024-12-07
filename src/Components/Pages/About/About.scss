@@ -7,7 +7,7 @@
   padding: 0;
 
   .bnr {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     margin: 20px 0px 20px 0px;
     display: flex;
@@ -20,12 +20,13 @@
     font-family: "Times New Roman", Times, serif;
 
     @include md {
+      height: 85vh;
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: end;
       align-items: end;
-      background-image: url("../../Assets/abtBanner.jpeg");
+      background-image: url("../../Assets/abtBanner(MV).jpeg");
       background-repeat: no-repeat;
       background-size: auto;
     }
@@ -39,11 +40,21 @@
       align-items: center;
       font-weight: 600;
       color: white;
+      position: relative;
+      animation: header 0.6s ease-in-out;
 
       @include md {
-        width: 42%;
+        width: 39%;
         color: black;
         font-size: 2rem;
+      }
+    }
+    @keyframes header {
+      0% {
+        left: 400px;
+      }
+      100% {
+        left: 0;
       }
     }
 
@@ -69,11 +80,20 @@
           color: rgb(219, 189, 21);
           font-size: 1rem;
           font-weight: bold;
-          margin: 6px;
+          margin: 0px;
           padding: 0;
+          animation: subHeader 0.6s ease-in-out;
 
           @include md {
             font-size: 1.2rem;
+          }
+        }
+        @keyframes subHeader {
+          0% {
+            transform: scale(0);
+          }
+          100% {
+            transform: scale(1);
           }
         }
         h2 {
@@ -81,12 +101,26 @@
           padding: 0;
           font-size: 1.8rem;
           letter-spacing: 5px;
+          position: relative;
+          animation: subheader2 0.6s ease-in-out;
+          margin-top: 20px;
 
           @include md {
             font-size: 1.8rem;
             letter-spacing: 6px;
+            margin-top: 0px;
           }
         }
+
+        @keyframes subheader2 {
+          0% {
+            left: 400px;
+          }
+          100% {
+            left: 0;
+          }
+        }
+
         p {
           width: 98%;
           font-size: 0.8rem;
@@ -98,6 +132,7 @@
           }
         }
       }
+
       .txticon {
         height: auto;
         display: flex;
@@ -116,6 +151,15 @@
             margin: 3px 8px 0px 0px;
             font-size: 2rem;
             color: black;
+            animation: icon 0.6s ease-in-out;
+          }
+          @keyframes icon {
+            0% {
+              transform: scale(0);
+            }
+            100% {
+              transform: scale(1);
+            }
           }
         }
         .text1 {
@@ -131,6 +175,10 @@
     }
   }
   #reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 2rem;
     h1 {
@@ -138,53 +186,23 @@
       margin-bottom: 1rem;
       color: #0f0f0f;
     }
-
-    #review_video {
+    #video_container {
+      width: 80%;
       display: flex;
-      gap: 1.5rem;
-      justify-content: center;
+      flex-direction: column;
+      gap: 40px;
 
-      .video-container {
-        position: relative;
-        width: 300px;
-        height: 200px;
+      @include md {
+        display: flex;
+        flex-direction: row;
+      }
 
-        video {
-          width: 100%;
-          height: 100%;
-          border-radius: 8px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-          object-fit: cover;
-        }
-
-        .play-pause-btn {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background-color: rgba(0, 0, 0, 0.7);
-          color: #fff;
-          border: none;
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.5rem;
-          cursor: pointer;
-          outline: none;
-          opacity: 0;
-          transition: opacity 0.3s ease;
-
-          &:hover {
-            background-color: rgba(0, 0, 0, 0.9);
-          }
-        }
-
-        &:hover .play-pause-btn {
-          opacity: 1;
-        }
+      .video {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
       }
     }
   }

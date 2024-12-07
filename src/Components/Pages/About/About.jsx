@@ -1,24 +1,9 @@
 import React from "react";
 import "./About.scss";
-// import R1 from "../../../../public/Videos/Reviews1.mp4";
-// import R2 from "../../../../public/Videos/Reviews2.mp4";
-// import R3 from "../../../../public/Videos/Reviews3.mp4";
 import { TbTargetArrow } from "react-icons/tb";
 import { FaLowVision } from "react-icons/fa";
-// import { useRef } from "react";
 
 const About = () => {
-  // const videoRefs = useRef([]);
-
-  // const togglePlayPause = (index) => {
-  //   const video = videoRefs.current[index];
-  //   if (video.paused) {
-  //     video.play();
-  //   } else {
-  //     video.pause();
-  //   }
-  // };
-
   return (
     <div className="about">
       <div className="bnr">
@@ -72,40 +57,35 @@ const About = () => {
       {/* REVIEWS */}
       <div id="reviews">
         <h1>REVIEWS</h1>
-        {/* <div id="review_video">
-          {[R1, R2, R3].map((videoSrc, index) => (
-            <div key={index} className="video-container">
-              <video
-                src={videoSrc}
-                ref={(el) => (videoRefs.current[index] = el)}
-                controls={false} // Disable default controls
-              />
-              <button
-                onClick={() => togglePlayPause(index)}
-                className="play-pause-btn"
-              >
-                ▶️
-              </button>
-            </div>
-          ))} */}
-        <video controls>
-          {/*REVIEW 1 */}
-          <source
-            src="https://www.youtube.com/watch?v=VB2PL0ffTFw&list=PLPfFfp1_hOuwfHvJrOXCe1NEyf_myolns&index=8"
-            type="video/mp4"
-          />
-        </video>
+        <div id="video_container">
+          <iframe
+            src="https://youtube.com/embed/sR1uX5dEtDY?si=NXyLwuhkcD0bg15h"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="video"
+          ></iframe>
 
-        <video controls>
-          {/*REVIEW 2 */}
-          <source
+          <iframe
+            src="https://www.youtube.com/embed/GcRhbWm2Zlc?si=nx7uwNCAB3Q61qzL"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            className="video"
+          ></iframe>
+
+          <iframe
             src="https://www.youtube.com/watch?v=GcRhbWm2Zlc&list=PLPfFfp1_hOuwfHvJrOXCe1NEyf_myolns&index=9"
-            type="video/mp4"
-          />
-        </video>
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="video"
+          ></iframe>
+        </div>
       </div>
     </div>
-    // </div>
   );
 };
 
