@@ -51,7 +51,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <div id="container">
-        <h1>LET'S PLAN YOUR DREAM WEDDING TOGETHER!</h1>
+        <h1>LET'S PLAN YOUR DREAM EVENT TOGETHER!</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

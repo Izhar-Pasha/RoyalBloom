@@ -71,6 +71,7 @@
       }
 
       input:focus {
+        background-color: rgba(255, 255, 255, 0.533);
         border-bottom: 2px solid #050505;
       }
 
@@ -111,6 +112,12 @@
         border-style: solid;
         border-color: black;
         cursor: pointer;
+      }
+      textarea:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      textarea:active {
+        border-bottom: 2px solid #131212;
       }
 
       button {
