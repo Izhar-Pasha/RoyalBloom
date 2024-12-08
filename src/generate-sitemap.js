@@ -1,15 +1,15 @@
 import { SitemapStream, streamToPromise } from "sitemap";
-import { createWriteStream, mkdirSync } from "fs";
+import { mkdirSync, writeFileSync } from "fs";
 import { dirname } from "path";
 
 async function generateSitemap() {
-  const outputPath = "../public/sitemap.xml"; // Correct path to the public folder
+  const outputPath = "../public/sitemap.xml"; // Path to save the sitemap
 
   // Ensure the directory exists
   mkdirSync(dirname(outputPath), { recursive: true });
 
   const smStream = new SitemapStream({
-    hostname: "https://www.royalbloom.in/", // Base URL of your website
+    hostname: "https://www.royalbloom.in/", // Your website's base URL
   });
 
   const routes = [
@@ -25,18 +25,24 @@ async function generateSitemap() {
 
   smStream.end();
 
-  const sitemap = await streamToPromise(smStream).then((data) =>
-    data.toString()
-  );
-
-  // Ensure the output is valid XML
-  if (sitemap.startsWith("<?xml")) {
-    createWriteStream(outputPath).write(sitemap);
-    console.log("Sitemap generated!");
-  } else {
-    console.log(
-      "Failed to generate a valid sitemap. Please check the sitemap content."
+  try {
+    const sitemap = await streamToPromise(smStream).then((data) =>
+      data.toString()
     );
+
+    // Debugging: Log the generated sitemap content
+    console.log("Generated Sitemap:\n", sitemap);
+
+    // Ensure the output is valid XML
+    if (sitemap.startsWith("<?xml")) {
+      // Write the sitemap to the public directory
+      writeFileSync(outputPath, sitemap);
+      console.log("Sitemap generated and saved to:", outputPath);
+    } else {
+      console.error("The generated sitemap is not valid XML.");
+    }
+  } catch (error) {
+    console.error("Error generating sitemap:", error);
   }
 }
 
