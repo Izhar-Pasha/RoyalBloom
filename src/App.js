@@ -13,6 +13,7 @@ import Service from "./Components/Pages/Services/Service";
 import Gallery from "./Components/Pages/Gallery/Gallery";
 import About from "./Components/Pages/About/About";
 import Loader from "./Components/Loader/Loader.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function Main() {
         <Route path="/Services" element={<Service />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Contact" element={<Contact />} />
+        <Analytics />
       </Routes>
       {!hideNavbarFooter && <Footer />}
     </>
