@@ -38,8 +38,8 @@ function Main() {
         <Route path="/Services" element={<Service />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Contact" element={<Contact />} />
-        <Analytics />
       </Routes>
+      <Analytics />
       {!hideNavbarFooter && <Footer />}
     </>
   );
