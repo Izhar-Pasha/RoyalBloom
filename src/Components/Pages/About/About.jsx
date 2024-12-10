@@ -83,10 +83,12 @@ const About = () => {
           ></iframe>
 
           <iframe
-            src="https://www.youtube.com/watch?v=GcRhbWm2Zlc&list=PLPfFfp1_hOuwfHvJrOXCe1NEyf_myolns&index=9"
+            src="https://www.youtube.com/embed/oIPtpkotCZU?si=mK479sCkfNe0Ez-g"
             title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
             className="video"
           ></iframe>
         </div>

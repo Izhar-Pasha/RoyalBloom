@@ -87,6 +87,20 @@ const Gallery = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
+
+        <iframe
+          src="https://youtube.com/embed/_K5DPnLiksM?si=9UsWeZnnjeO3DouK"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+
+        <iframe
+          src="https://youtube.com/embed/Uq2FEa314PM?si=GGM-Kro_wijbJalC"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
 
       <h2>PHOTOS'S</h2>

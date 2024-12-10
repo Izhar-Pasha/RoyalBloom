@@ -137,8 +137,9 @@
         background-size: cover;
 
         @include md {
-          height: 580px;
+          height: 500px;
           width: 600px;
+          background-size: contain;
         }
       }
       .intro_Pic:hover {
