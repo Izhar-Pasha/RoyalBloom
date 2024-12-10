@@ -12,6 +12,19 @@ import img9 from "../../Assets/G4.jpg";
 import img10 from "../../Assets/G5.jpg";
 import img12 from "../../Assets/G7.jpg";
 import img13 from "../../Assets/G8.jpg";
+import G10 from "../../Assets/G10.jpg";
+import G11 from "../../Assets/G11.jpg";
+import G12 from "../../Assets/G12.jpg";
+import G13 from "../../Assets/G13.jpg";
+import G14 from "../../Assets/G14.jpg";
+import G15 from "../../Assets/G15.jpg";
+import G16 from "../../Assets/G16.jpg";
+import G17 from "../../Assets/G17.jpg";
+import G18 from "../../Assets/G18.jpg";
+import G19 from "../../Assets/G19.jpg";
+import G21 from "../../Assets/G21.jpg";
+import G22 from "../../Assets/G22.jpg";
+import G23 from "../../Assets/G23.jpg";
 
 const Gallery = () => {
   return (
@@ -85,6 +98,14 @@ const Gallery = () => {
           <img src={img6} alt="RoyalBloom.png" />
           <img src={img7} alt="RoyalBloom.png" />
           <img src={img8} alt="RoyalBloom.png" />
+
+          <img src={G10} alt="couple.jpg" />
+          <img src={G11} alt="couple.jpg" />
+          <img src={G12} alt="couple.jpg" />
+          <img src={G21} alt="couple.jpg" />
+          <img src={G13} alt="couple.jpg" />
+          <img src={G14} alt="couple.jpg" />
+          <img src={G15} alt="couple.jpg" />
         </div>
         <div className="column">
           <img src={img4} alt="RoyalBloom.png" />
@@ -93,6 +114,12 @@ const Gallery = () => {
           <img src={img10} alt="RoyalBloom.png" />
           <img src={img12} alt="RoyalBloom.png" />
           <img src={img13} alt="RoyalBloom.png" />
+          <img src={G23} alt="couple.jpg" />
+          <img src={G22} alt="couple.jpg" />
+          <img src={G16} alt="couple.jpg" />
+          <img src={G17} alt="couple.jpg" />
+          <img src={G18} alt="couple.jpg" />
+          <img src={G19} alt="couple.jpg" />
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: end;
     align-items: flex-start;
-    background-image: url("../../Assets/SrvceBanner.jpg");
+    background-image: url("../../Assets/Service_Banner.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,19 +26,19 @@
       flex-direction: column;
       justify-content: end;
       align-items: start;
-      background-image: url("../../Assets/SrvceBanner.jpg");
+      background-image: url("../../Assets/G5.jpg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 11/4;
       text-align: center;
     }
 
     h1 {
       height: auto;
       width: 50%;
-      color: white;
+      color: black;
       font-size: 1.5rem;
-      font-weight: 500;
+      font-weight: bold;
       letter-spacing: 8px;
       position: relative;
       margin: 0px 0px 30px 20px;

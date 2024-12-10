@@ -31,14 +31,12 @@ const Contact = () => {
       Message: ${msg}
     `;
 
-    const mailtoLink = `mailto:mdizharpasha07@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:rbevents233@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
-    // Open mailto link
     window.location.href = mailtoLink;
 
-    // Reset the form fields
     setFormData({
       Name: "",
       Email: "",
