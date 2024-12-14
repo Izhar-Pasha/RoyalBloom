@@ -4,10 +4,11 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Times New Roman", Times, serif;
-  background-image: url("../../Assets/contact_Banner.jpg");
+  background-image: url("../../Assets/Contact_Banner.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -55,10 +56,11 @@
 
       input {
         height: 15px;
-        padding: 15px;
+        padding: 18px;
         background: transparent;
         border: none;
         outline: none;
+        background-color: rgba(255, 255, 255, 0.39);
 
         @include md {
           height: 20px;
@@ -80,15 +82,15 @@
       }
       input::placeholder {
         font-size: 0.9rem;
-        font-weight: 600;
-        color: rgba(225, 214, 214, 0.727);
+        font-weight: bold;
+        color: rgb(17, 16, 16);
       }
 
       #Date {
         font-size: 0.9rem;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.985);
-        background-color: rgba(244, 237, 237, 0.2);
+        color: rgb(17, 16, 16);
+        background-color: rgba(255, 255, 255, 0.523);
       }
 
       textarea {
@@ -100,11 +102,12 @@
         border-color: rgba(0, 0, 0, 0.07);
         outline: none;
         background: transparent;
+        background-color: rgba(255, 255, 255, 0.39);
       }
       textarea::placeholder {
         font-size: 0.9rem;
-        font-weight: 600;
-        color: rgba(225, 214, 214, 0.985);
+        font-weight: bold;
+        color: rgb(17, 16, 16);
       }
 
       textarea:hover {
@@ -124,7 +127,6 @@
         background: #fff;
         color: white;
         border: none;
-        // padding: 10px 20px;
         padding: 5px;
         display: inline-block;
         font-size: 15px;
@@ -163,6 +165,19 @@
         right: 0;
         opacity: 1;
       }
+    }
+  }
+  .alter {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    @include md {
+      background-color: black;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.3rem;
     }
   }
 }

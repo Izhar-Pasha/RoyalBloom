@@ -103,6 +103,11 @@ const Contact = () => {
           </button>
         </form>
       </div>
+
+      <div className="alter">
+        <h1>Alternative Contact</h1>
+        <b>Manoj Kumar N: 7349494734</b>
+      </div>
     </div>
   );
 };

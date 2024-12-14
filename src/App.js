@@ -14,11 +14,13 @@ import Gallery from "./Components/Pages/Gallery/Gallery";
 import About from "./Components/Pages/About/About";
 import Loader from "./Components/Loader/Loader.jsx";
 import { Analytics } from "@vercel/analytics/react";
+import StickyIcon from "./Components/StickyIcon/StickyIcon.jsx";
 
 function App() {
   return (
     <Router>
       <Main />
+      <StickyIcon />
     </Router>
   );
 }

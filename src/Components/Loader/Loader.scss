@@ -7,27 +7,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background-color: red;
-  background: #23050b;
-  background: -webkit-linear-gradient(
-    43deg,
-    #5e650d 50%,
-    #cfbe26 50%,
-    #eaed2f 100%
-  );
-  background: linear-gradient(250deg, #c19b06 35%, #f2f24a 50%, #f4e34d 100%);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: url("../Assets/I1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 10px;
 
   img {
     height: 300px;
-    width: 300px;
+    width: 380px;
     border: none;
     border-radius: 50%;
-    box-shadow: 30px 10px 40px 20px #4f5509;
+    animation: loader 0.6s ease-in-out;
 
     @include md {
       height: 500px;
-      width: 500px;
-      box-shadow: 20px 20px 20px 20px #4f5509;
+      width: 650px;
+    }
+  }
+  @keyframes loader {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
     }
   }
 }

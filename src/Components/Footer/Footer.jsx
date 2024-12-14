@@ -32,9 +32,8 @@ const Footer = () => {
       <div className="builder">
         <div className="container">
           <div className="copyRyt">
-            &#169;Royal Bloom || All Rights Reserved{" "}
+            &#169;Royal Bloom || All Rights Reserved
           </div>
-          <i>Build By Izhar Pasha</i>
         </div>
       </div>
     </div>

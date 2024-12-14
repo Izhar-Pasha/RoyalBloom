@@ -2,7 +2,7 @@ import React from "react";
 import "./About.scss";
 import { TbTargetArrow } from "react-icons/tb";
 import { FaLowVision } from "react-icons/fa";
-import abt_img from "../../Assets/About_Banner.jpg";
+import abt_img from "../../Assets/About_Banner.jpeg";
 
 const About = () => {
   return (

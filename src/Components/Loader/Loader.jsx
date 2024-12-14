@@ -1,6 +1,6 @@
 import React from "react";
 import "./Loader.scss";
-import loader from "../Assets/Royal_Load2.gif";
+import loader from "../Assets/royalbloom2.png";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -10,7 +10,7 @@ const Loader = () => {
   useEffect(() => {
     const timerId = setTimeout(() => {
       navigate("/Home");
-    }, 4400);
+    }, 2400);
 
     return () => clearTimeout(timerId);
   }, [navigate]);
