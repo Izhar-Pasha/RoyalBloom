@@ -8,7 +8,7 @@ import dec4 from "../../Assets/G6.jpg";
 import dec5 from "../../Assets/G9.jpg";
 import G10 from "../../Assets/G10.jpg";
 import G11 from "../../Assets/G11.jpg";
-import G12 from "../../Assets/G12.jpg";
+// import G12 from "../../Assets/G12.jpg";
 import G13 from "../../Assets/G13.jpg";
 import G14 from "../../Assets/G14.jpg";
 import G15 from "../../Assets/G15.jpg";
@@ -94,7 +94,6 @@ const Home = () => {
           <img src={dec5} alt="couple.jpg" />
           <img src={G10} alt="couple.jpg" />
           <img src={G11} alt="couple.jpg" />
-          <img src={G12} alt="couple.jpg" />
           <img src={G13} alt="couple.jpg" />
           <img src={G14} alt="couple.jpg" />
           <img src={G15} alt="couple.jpg" />

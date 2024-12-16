@@ -14,7 +14,7 @@ import img12 from "../../Assets/G7.jpg";
 import img13 from "../../Assets/G8.jpg";
 import G10 from "../../Assets/G10.jpg";
 import G11 from "../../Assets/G11.jpg";
-import G12 from "../../Assets/G12.jpg";
+// import G12 from "../../Assets/G12.jpg";
 import G13 from "../../Assets/G13.jpg";
 import G14 from "../../Assets/G14.jpg";
 import G15 from "../../Assets/G15.jpg";
@@ -151,7 +151,6 @@ const Gallery = () => {
           <img src={img8} alt="RoyalBloom.png" />
           <img src={G10} alt="couple.jpg" />
           <img src={G11} alt="couple.jpg" />
-          <img src={G12} alt="couple.jpg" />
           <img src={G21} alt="couple.jpg" />
           <img src={G13} alt="couple.jpg" />
           <img src={G39} alt="couple.jpg" />
